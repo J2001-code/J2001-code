@@ -15,4 +15,6 @@ CREATE TABLE Employees(
 );
 ```
 
+### My image
+
 ![Alt text](https://github.com/J2001-code/J2001-code/blob/main/employees%20table.JPG)
