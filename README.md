@@ -15,4 +15,4 @@ CREATE TABLE Employees(
 );
 ```
 
-![employees](employees table.JPG)
+![Alt text]("employees table.JPG")
