@@ -14,3 +14,5 @@ CREATE TABLE Employees(
     email VARCHAR(100)
 );
 ```
+
+![employees](employees table.JPG)
