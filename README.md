@@ -48,6 +48,10 @@ CREATE TABLE Policies(
     FOREIGN KEY (employee_id) REFERENCES Employees(employee_id)
 );
 ```
+### inserting data into employee table
+```sql
+INSERT INTO Employees(employee_id, Ename, Erole, email) VALUES (1, 'Alice', 'Manager', 'alice@gmail.com');
+```
 
 # My image
 
