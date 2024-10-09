@@ -51,6 +51,8 @@ CREATE TABLE Policies(
 ### inserting data into employee table
 ```sql
 INSERT INTO Employees(employee_id, Ename, Erole, email) VALUES (1, 'Alice', 'Manager', 'alice@gmail.com');
+INSERT INTO Employees(employee_id, Ename, Erole, email) VALUES (2, 'Bob', 'Sales Agent', 'bob@gmail.com');
+
 ```
 
 # My image
