@@ -22,6 +22,7 @@ CREATE TABLE Clients(
     contact_info VARCHAR(100)
 );
 ```
+### policies table
 
 ```sql
 CREATE TABLE Policies(
