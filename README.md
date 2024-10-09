@@ -14,6 +14,14 @@ CREATE TABLE Employees(
     email VARCHAR(100)
 );
 ```
+### client table
+```sql
+CREATE TABLE Clients(
+    client_id INT PRIMARY KEY,
+    Cname VARCHAR(100),
+    contact_info VARCHAR(100)
+);
+```
 
 # My image
 
