@@ -23,6 +23,19 @@ CREATE TABLE Clients(
 );
 ```
 
+```sql
+CREATE TABLE Policies(
+    policy_id INT PRIMARY KEY,
+    client_id INT,
+    employee_id INT,
+    policy_type VARCHAR(50),
+    start_date DATE,
+    end_date DATE,
+    FOREIGN KEY (client_id) REFERENCES Clients(client_id),
+    FOREIGN KEY (employee_id) REFERENCES Employees(employee_id)
+);
+```
+
 # My image
 
 ![Alt text](https://github.com/J2001-code/J2001-code/blob/main/employees%20table.JPG)
