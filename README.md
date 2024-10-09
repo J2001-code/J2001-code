@@ -22,6 +22,18 @@ CREATE TABLE Clients(
     contact_info VARCHAR(100)
 );
 ```
+### claims table
+
+```sql
+CREATE TABLE Claims(
+    claim_id INT PRIMARY KEY,
+    policy_id INT,
+    amount DECIMAL(10, 2),
+    status VARCHAR(50),
+    date_filed DATE,
+    FOREIGN KEY (policy_id) REFERENCES Policies(policy_id)
+);
+```
 ### policies table
 
 ```sql
