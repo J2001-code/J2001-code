@@ -134,6 +134,20 @@ FROM
 LEFT JOIN Policies ON Employees.employee_id = Policies.employee_id;
 ```
 
+### Inner joins to retrieve claims and the employees9(claims adjusters) who managed the policies
+```sql
+SELECT 
+    Claims.claim_id, 
+    Claims.amount, 
+    Claims.status, 
+    Claims.date_filed, 
+    Employees.Ename AS employee_name
+FROM 
+    Claims
+INNER JOIN Policies ON Claims.policy_id = Policies.policy_id
+INNER JOIN Employees ON Policies.employee_id = Employees.employee_id;
+```
+
 
 
 
