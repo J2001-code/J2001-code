@@ -69,6 +69,11 @@ INSERT INTO Policies (policy_id, client_id, employee_id, policy_type, start_date
 INSERT INTO Policies (policy_id, client_id, employee_id, policy_type, start_date, end_date) VALUES (2, 2, 2, 'Car Insurance', '', '');
 
 ```
+### insert into claims table
+```sql
+INSERT INTO Claims (claim_id, policy_id, amount, status, date_filed) VALUES (1, 1, 500.00, 'Pending', '');
+
+```
 
 
 
