@@ -58,6 +58,12 @@ INSERT INTO Employees(employee_id, Ename, Erole, email) VALUES (4, 'Diana', 'Cla
 INSERT INTO Employees(employee_id, Ename, Erole, email) VALUES (5, 'Evan', 'Customer Service', 'evan@gmail.com');
 INSERT INTO Employees(employee_id, Ename, Erole, email) VALUES (6, 'Fiona', 'Accountant', 'fiona@gmail.com');
 ```
+### insert into clients table
+```sql
+INSERT INTO Clients (client_id, Cname, contact_info) VALUES (1, 'John Doe', 'john.doe@example.com');
+INSERT INTO Clients (client_id, Cname, contact_info) VALUES (2, 'Jane Smith', 'jane.smith@example.com');
+```
+
 
 
 # My image
