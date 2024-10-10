@@ -160,6 +160,18 @@ FROM
 INNER JOIN Policies ON Clients.client_id = Policies.client_id
 LEFT JOIN Claims ON Policies.policy_id = Claims.policy_id;
 ```
+## JOINS WITH SUBQUERY TO FINND TOTAL CLAIMS AMOUNT FOR EACH CLIENT
+```sql
+SELECT 
+    C.client_id, 
+    C.Cname AS client_name, 
+    (SELECT SUM(amount) 
+     FROM Claims CL 
+     INNER JOIN Policies P ON CL.policy_id = P.policy_id
+     WHERE P.client_id = C.client_id) AS total_claims_amount
+FROM 
+    Clients C;
+```
 
 
 
