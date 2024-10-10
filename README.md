@@ -63,6 +63,13 @@ INSERT INTO Employees(employee_id, Ename, Erole, email) VALUES (6, 'Fiona', 'Acc
 INSERT INTO Clients (client_id, Cname, contact_info) VALUES (1, 'John Doe', 'john.doe@example.com');
 INSERT INTO Clients (client_id, Cname, contact_info) VALUES (2, 'Jane Smith', 'jane.smith@example.com');
 ```
+### insert into policies table
+```sql
+INSERT INTO Policies (policy_id, client_id, employee_id, policy_type, start_date, end_date) VALUES (1, 1, 2, 'Health Insurance', '', '');
+INSERT INTO Policies (policy_id, client_id, employee_id, policy_type, start_date, end_date) VALUES (2, 2, 2, 'Car Insurance', '', '');
+
+```
+
 
 
 
