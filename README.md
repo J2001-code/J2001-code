@@ -86,6 +86,11 @@ UPDATE Claims SET status = 'Approved' WHERE claim_id = 1;
 ```sql
 DELETE FROM Claims WHERE claim_id = 1;
 ```
+### select
+```sql
+select * from Employees;
+```
+
 
 
 
