@@ -120,6 +120,19 @@ FROM
 INNER JOIN Policies ON Claims.policy_id = Policies.policy_id
 INNER JOIN Clients ON Policies.client_id = Clients.client_id;
 ```
+### left join to retrieve all Employees nd their associated policies
+```sql
+SELECT 
+    Employees.Ename AS employee_name, 
+    Employees.Erole, 
+    Policies.policy_id, 
+    Policies.policy_type, 
+    Policies.start_date, 
+    Policies.end_date
+FROM 
+    Employees
+LEFT JOIN Policies ON Employees.employee_id = Policies.employee_id;
+```
 
 
 
