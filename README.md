@@ -22,6 +22,7 @@ CREATE TABLE Clients(
     contact_info VARCHAR(100)
 );
 ```
+
 ### claims table
 
 ```sql
@@ -52,8 +53,12 @@ CREATE TABLE Policies(
 ```sql
 INSERT INTO Employees(employee_id, Ename, Erole, email) VALUES (1, 'Alice', 'Manager', 'alice@gmail.com');
 INSERT INTO Employees(employee_id, Ename, Erole, email) VALUES (2, 'Bob', 'Sales Agent', 'bob@gmail.com');
-
+INSERT INTO Employees(employee_id, Ename, Erole, email) VALUES (3, 'Charlie', 'Underwriter', 'charlie@gmail.com');
+INSERT INTO Employees(employee_id, Ename, Erole, email) VALUES (4, 'Diana', 'Claims Adjuster', 'diana@gmail.com');
+INSERT INTO Employees(employee_id, Ename, Erole, email) VALUES (5, 'Evan', 'Customer Service', 'evan@gmail.com');
+INSERT INTO Employees(employee_id, Ename, Erole, email) VALUES (6, 'Fiona', 'Accountant', 'fiona@gmail.com');
 ```
+
 
 # My image
 
