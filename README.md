@@ -22,6 +22,20 @@ CREATE TABLE Clients(
     contact_info VARCHAR(100)
 );
 ```
+### inner joins to retrieve policies and their related employees and clients
+```sql
+SELECT 
+    Policies.policy_id, 
+    Clients.Cname AS client_name, 
+    Employees.Ename AS employee_name, 
+    Policies.policy_type, 
+    Policies.start_date, 
+    Policies.end_date
+FROM 
+    Policies
+INNER JOIN Clients ON Policies.client_id = Clients.client_id
+INNER JOIN Employees ON Policies.employee_id = Employees.employee_id;
+```
 
 ### claims table
 
