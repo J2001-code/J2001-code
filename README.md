@@ -1,3 +1,10 @@
+ 👋 Hi, I’m @J2001-code
+- 👀 I’m interested in ...Database development with PL/SQL
+- 🌱 I’m currently learning ...SOFTWARE ENGINEERING
+  - 📫 How to reach me ..niyomwungerijanvier2001@gmail.com
+
+
+
 # Employee Management Database (Using Oracle as RDBMS)
 
 This README provides an overview of the Employee Management Database, designed specifically for Oracle courses to manage and store information related to employees and organizational structure, that Related to Provide Insurance service . It includes tables for Employees, Clients, Claims and Policies.
