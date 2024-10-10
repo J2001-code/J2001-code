@@ -82,6 +82,10 @@ UPDATE Employees SET email = 'alice.new@gmail.com' WHERE employee_id = 1;
 ```sql
 UPDATE Claims SET status = 'Approved' WHERE claim_id = 1;
 ```
+### Delete
+```sql
+DELETE FROM Claims WHERE claim_id = 1;
+```
 
 
 
