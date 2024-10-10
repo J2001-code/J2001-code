@@ -24,6 +24,7 @@ CREATE TABLE Clients(
 ```
 
 
+
 ### claims table
 
 ```sql
@@ -104,6 +105,20 @@ FROM
     Policies
 INNER JOIN Clients ON Policies.client_id = Clients.client_id
 INNER JOIN Employees ON Policies.employee_id = Employees.employee_id;
+```
+### Inner joins to retrieve claims,policies and claims
+```sql
+SELECT 
+    Claims.claim_id, 
+    Claims.amount, 
+    Claims.status, 
+    Claims.date_filed, 
+    Policies.policy_type, 
+    Clients.Cname AS client_name
+FROM 
+    Claims
+INNER JOIN Policies ON Claims.policy_id = Policies.policy_id
+INNER JOIN Clients ON Policies.client_id = Clients.client_id;
 ```
 
 
