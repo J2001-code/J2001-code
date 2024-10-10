@@ -74,6 +74,10 @@ INSERT INTO Policies (policy_id, client_id, employee_id, policy_type, start_date
 INSERT INTO Claims (claim_id, policy_id, amount, status, date_filed) VALUES (1, 1, 500.00, 'Pending', '');
 
 ```
+### update employees table
+```sql
+UPDATE Employees SET email = 'alice.new@gmail.com' WHERE employee_id = 1;
+```
 
 
 
