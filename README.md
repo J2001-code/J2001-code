@@ -1,6 +1,6 @@
 # Employee Management Database (Using Oracle as RDBMS)
 
-This README provides an overview of the Employee Management Database, designed specifically for Oracle courses to manage and store information related to employees and organizational structure. It includes tables for Countries, Departments, Roles, Managers, Employees, Allowance, and Attendance records.
+This README provides an overview of the Employee Management Database, designed specifically for Oracle courses to manage and store information related to employees and organizational structure, that Related to Provide Insurance service . It includes tables for Employees, Clients, Claims and Policies.
 
 ## Table Structures
 
@@ -37,7 +37,7 @@ CREATE TABLE Claims(
     FOREIGN KEY (policy_id) REFERENCES Policies(policy_id)
 );
 ```
-### policies table
+### Policies table
 
 ```sql
 CREATE TABLE Policies(
@@ -51,7 +51,7 @@ CREATE TABLE Policies(
     FOREIGN KEY (employee_id) REFERENCES Employees(employee_id)
 );
 ```
-### inserting data into employee table
+### Inserting data into employee table
 ```sql
 INSERT INTO Employees(employee_id, Ename, Erole, email) VALUES (1, 'Alice', 'Manager', 'alice@gmail.com');
 INSERT INTO Employees(employee_id, Ename, Erole, email) VALUES (2, 'Bob', 'Sales Agent', 'bob@gmail.com');
@@ -60,18 +60,18 @@ INSERT INTO Employees(employee_id, Ename, Erole, email) VALUES (4, 'Diana', 'Cla
 INSERT INTO Employees(employee_id, Ename, Erole, email) VALUES (5, 'Evan', 'Customer Service', 'evan@gmail.com');
 INSERT INTO Employees(employee_id, Ename, Erole, email) VALUES (6, 'Fiona', 'Accountant', 'fiona@gmail.com');
 ```
-### insert into clients table
+### Insert Into clients Table
 ```sql
 INSERT INTO Clients (client_id, Cname, contact_info) VALUES (1, 'John Doe', 'john.doe@example.com');
 INSERT INTO Clients (client_id, Cname, contact_info) VALUES (2, 'Jane Smith', 'jane.smith@example.com');
 ```
-### insert into policies table
+### Insert Into Policies Table
 ```sql
 INSERT INTO Policies (policy_id, client_id, employee_id, policy_type, start_date, end_date) VALUES (1, 1, 2, 'Health Insurance', '', '');
 INSERT INTO Policies (policy_id, client_id, employee_id, policy_type, start_date, end_date) VALUES (2, 2, 2, 'Car Insurance', '', '');
 
 ```
-### insert into claims table
+### Insert into claims table
 ```sql
 INSERT INTO Claims (claim_id, policy_id, amount, status, date_filed) VALUES (1, 1, 500.00, 'Pending', '');
 
@@ -92,7 +92,7 @@ DELETE FROM Claims WHERE claim_id = 1;
 ```sql
 select * from Employees;
 ```
-### inner joins to retrieve policies and their related employees and clients
+### Inner joins to retrieve policies and their related employees and clients
 ```sql
 SELECT 
     Policies.policy_id, 
