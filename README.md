@@ -179,8 +179,8 @@ SELECT
 FROM 
     Clients C;
 ```
-## my image
-![Alt text](![image](https://github.com/user-attachments/assets/223c2a60-5239-45f1-b956-81e6802d491e)
+# Conceptual, logical and physical data model
+![Alt text](![2nd img](https://github.com/user-attachments/assets/c9dc029a-8fbe-43b8-908d-3bd49c064e95)
 )
 
 
